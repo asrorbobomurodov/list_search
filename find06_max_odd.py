@@ -5,4 +5,10 @@ def find_max_odd(data):
         data: list of numbers
     returns: maximum odd number in the list
     """
-    return 0
+    i = 0
+    while len(data)>i:
+        if max(data)%2==1:
+            return max(data)
+        data.remove(max(data))
+        i += 1
+print(find_max_odd([12,15,14,20,22]))

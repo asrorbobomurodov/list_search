@@ -5,4 +5,5 @@ def find_min_count(data):
         data: list of numbers
     returns: count of minimum numbers in the list
     """
-    return 0
+    return data.count(min(data))
+print(find_min_count([-9,-89,8,-89,-4]))

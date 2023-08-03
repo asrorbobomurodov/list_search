@@ -5,5 +5,6 @@ def find_max(data):
         data: list of numbers
     returns: maximum number in the list
     """
-    return 0
+    return max(data)
+print(find_max([0,1,5,9,18,54,0]))
     

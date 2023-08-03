@@ -5,4 +5,11 @@ def find_max_count(data):
         data: list of numbers
     returns: count of maximum numbers in the list
     """
-    return 0
+    i = 0
+    s = 0
+    while len(data)>i:
+        if data[i]==max(data):
+            s += 1
+        i = i+1
+    return s
+print(find_max_count([0, 8, 9, 9, 7, 0, 9]))
